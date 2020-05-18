@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  background-color: #eee;
+  padding: 30px;
+}
+
+.newElmt {
+  background-color: #eee;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px 0 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newElmt h2 {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+
+.newElmt button {
+  margin: 0 20px;
+  padding: 10px 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newElmt button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.newElmt button.delete {
+  background-color: red;
+}
+
+.newElmt button.delete a {
+  color: #fff;
+}

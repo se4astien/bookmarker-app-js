@@ -16,9 +16,11 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="style.css" />
+
     <title>Bookmark Application JS</title>
   </head>
-  <body>
+  <body onload="fetchBookmarks()">
     <div class="container">
       <div class="row">
         <div class="col-md-6 text-center mt-5">
@@ -29,16 +31,17 @@
       <div class="row">
         <div class="col-md-6 text-center mt-5">
           <form id="myForm">
-            <div class="form-group text-left text-primary">
+            <div class="form-group text-left">
               <label>Site name</label>
               <input
                 type="text"
+                bookmarksResults
                 class="form-control"
                 id="siteName"
                 placeholder="Enter website name"
               />
             </div>
-            <div class="form-group text-left text-primary">
+            <div class="form-group text-left">
               <label>Site URL</label>
               <input
                 type="text"
@@ -54,26 +57,7 @@
 
       <div class="row">
         <div class="col-md-12 mt-5">
-          <h2>Subheading</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
-            sequi blanditiis voluptate praesentium in eveniet assumenda,
-            temporibus vero laborum aspernatur.
-          </p>
-
-          <h2>Subheading</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
-            sequi blanditiis voluptate praesentium in eveniet assumenda,
-            temporibus vero laborum aspernatur.
-          </p>
-
-          <h2>Subheading</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
-            sequi blanditiis voluptate praesentium in eveniet assumenda,
-            temporibus vero laborum aspernatur.
-          </p>
+          <div id="bookmarksResults"></div>
         </div>
       </div>
     </div>
