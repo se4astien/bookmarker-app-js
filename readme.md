@@ -14,4 +14,4 @@
 https://bookmarker-app-js.netlify.app/
 
 ## Screenshot
-<img src="https://github.com/se4astien/bookmarker-app-js/blob/master/screenshot/bookmarker-app.png" width="75%" />
+<img src="https://github.com/se4astien/bookmarker-app-js/blob/master/screenshot/bookmarker-app.png" width="50%" />
