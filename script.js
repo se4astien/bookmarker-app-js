@@ -6,7 +6,7 @@ let bookmarksResults = document.getElementById('bookmarksResults');
 function saveBookmark(e) {
   validateForm();
 
-  // 2. Create object for bookmark
+  // 2. Create object for bookmark to save into LS
   let bookmark = {
     name: siteName.value,
     url: siteUrl.value,
