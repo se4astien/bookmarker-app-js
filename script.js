@@ -6,7 +6,7 @@ let bookmarksResults = document.getElementById('bookmarksResults');
 function saveBookmark(e) {
   validateForm();
 
-  // 2. Save into LS
+  // 2. Create object for bookmark
   let bookmark = {
     name: siteName.value,
     url: siteUrl.value,
@@ -31,10 +31,10 @@ function saveBookmark(e) {
     // Add bookmark to array
     bookmarks.push(bookmark);
     // Set to LocalStorage
-    localStorage.setItem('bookmarks', JSON.stringify(bookmarks)); // return JSON format to string
+    localStorage.setItem('bookmarks', JSON.stringify(bookmarks)); // return JSON format => string
   } else {
     // Get bookmarks from LS
-    let bookmarks = JSON.parse(localStorage.getItem('bookmarks')); // return string to JSON format
+    let bookmarks = JSON.parse(localStorage.getItem('bookmarks')); // return string => JSON format
     // Add bookmark to array
     bookmarks.push(bookmark);
     // Re-set back to LocalStorage
